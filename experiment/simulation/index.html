@@ -2,12 +2,67 @@
 <html>
 <head>
 	<!-- Add CSS at the head of HTML file -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="./css/main.css">
-</head>
+	<link rel="stylesheet" href="./css/exp1.css">
+	<script src="https://unpkg.com/mathjs@9.2.0/lib/browser/math.js"></script>
+	<script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+	</head>
+
 <body>
-		<!-- Your code goes here-->
+	<!-- Your code goes here-->
+	<div class="section is-small">
+		<div class="columns is-mobile is-centered">
+			<div class="column has-text-centered">
+				<h1 class="title">Simple Harmonic Oscillator</h1>
+			</div>
+		</div>
+	</div>
+	<fieldset>
+		<div class="slidecontainer">
+			<p>INITIAL ANGLE(deg): <span id="demo_dis"></span></p>
+			<input type="range" min="0" max="90" value="50" class="slider" id="displacement">
+		  </div>
+		<div class="slidecontainer">
+			<p>LENGTH(m): <span id="demo_len"></span></p>
+			<input type="range" min="3" max="30" value="15" class="slider" id="height">
+		  </div>
+		  <div class="slidecontainer">
+			<p>MASS(g): <span id="demo_mass"></span></p>
+			<input type="range" min="1" max="1000" value="1" class="slider" id="mass">
+		  </div>
+		<button id = "form" type = "submit" class ="submit" onClick="updatePara()">Submit</button><br>
+		<button class="play">Play</button>
+		<button class="pause">Pause</button>
+		<button class="restart">Restart</button>
+	</fieldset>
+	<div class="section">
+		<div class="columns is-mobile is-centered">
+			<div class="column has-text-centered">
+				<div class="hero is-large is-info">
+					<div class="hero-body has-text-centered">
+						<div id="plot"></div>
+						<div id = "plot2"></div>
+						<div class="container">
+							<div id="rod" className="rod">
+								<div id="pivot"></div>
+								<div id="ball"></div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/exp1.js"></script>
+	<script src="path/to/anime.min.js"></script>
 </body>
 </html>
