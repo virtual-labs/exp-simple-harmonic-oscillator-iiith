@@ -5,6 +5,7 @@ var progress = document.querySelector('.progress');
 var displacement = 50
 var height = 15
 var time = 2*Math.PI*Math.sqrt(15/9.8)*1000
+var mass = 600
 console.log(time)
 
 // slider for initial angle
@@ -60,8 +61,14 @@ function updatePara(){
   
   displacement = document.getElementById("displacement").value
   height = document.getElementById("height").value
+  mass = document.getElementById("mass").value
   let myElement = document.querySelector("#rod");
+  let myElement1 = document.querySelector("#ball");
+
   myElement.style.height= height+ "em";
+  myElement1.style.height= mass/300 + "em" ;
+  myElement1.style.width= mass/300 + "em" ;
+  myElement1.style.left= mass/(-600) + "em" ;
   time = 2*Math.PI*Math.sqrt((height)/9.8)*1000
  // console.log(time)
   draw();
@@ -103,8 +110,40 @@ function draw() {
       y: yValues,
       type: 'scatter'
     }
-    const data = [trace1]
-    Plotly.newPlot('plot', data)
+    const data = [trace1];
+    var layout = {
+      // title: {
+      //   text:'Plot Title',
+      //   font: {
+      //     family: 'Courier New, monospace',
+      //     size: 24
+      //   },
+      //   xref: 'paper',
+      //   x: 0.05,
+      // },
+      xaxis: {
+        title: {
+          text: 'Time(s)',
+          font: {
+            family: 'Courier New, monospace',
+            size: 18,
+            color: '#000000'
+          }
+        },
+      },
+      yaxis: {
+        title: {
+          text: 'Angular Displacement(Deg)',
+          font: {
+            family: 'Courier New, monospace',
+            size: 18,
+            color: '#000000'
+          }
+        }
+      }
+    };
+    var config = {responsive: true}
+    Plotly.newPlot('plot', data,layout,config);
   }
   catch (err) {
     console.error(err)
@@ -132,8 +171,31 @@ function draw2() {
       y: yValues,
       type: 'scatter'
     }
+    var layout = {
+      xaxis: {
+        title: {
+          text: 'Length(m)',
+          font: {
+            family: 'Courier New, monospace',
+            size: 18,
+            color: '#000000'
+          }
+        },
+      },
+      yaxis: {
+        title: {
+          text: 'Time Period (s)',
+          font: {
+            family: 'Courier New, monospace',
+            size: 18,
+            color: '#000000'
+          }
+        }
+      }
+    };
+    var config = {responsive: true}
     const data = [trace1]
-    Plotly.newPlot('plot2', data)
+    Plotly.newPlot('plot2', data,layout,config)
   }
   catch (err) {
     console.error(err)

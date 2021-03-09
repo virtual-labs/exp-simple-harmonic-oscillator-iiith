@@ -8,14 +8,14 @@
     transform-origin: 50% 0%;
     transform: rotate(60deg);
     background-color: green;
+    font-size: 1.4vw;
   }
   
   #pivot {
     position: absolute;
-    top: -5px;
-    left: -3px;
-    width: 8px;
-    height: 8px;
+    left: -0.225em;
+    width: 0.5em;
+    height: 0.5em;
     border-radius: 50%;
     background-color: black;
   }
@@ -23,13 +23,16 @@
   #ball {
     position: absolute;
     bottom: 0%;
-    left: -0.85em;
-    width: 2.25em;
-    height: 2.25em;
+    left: -1em;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: orange;
   }
-
+  
+  .but {
+    margin-left: 10px;
+  }
   .slidecontainer {
     width: 100%; /* Width of the outside container */
   }
@@ -69,3 +72,8 @@
     background: #4CAF50; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+#graph {
+  height : 50%;
+  width : 100%;
+}

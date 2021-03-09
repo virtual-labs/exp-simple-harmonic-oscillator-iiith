@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./css/exp1.css">
 	<script src="https://unpkg.com/mathjs@9.2.0/lib/browser/math.js"></script>
 	<script src="https://cdn.plot.ly/plotly-1.35.2.min.js"></script>
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 	</head>
 
 <body>
@@ -20,39 +21,52 @@
 			</div>
 		</div>
 	</div>
-	<fieldset>
-		<div class="slidecontainer">
-			<p>INITIAL ANGLE(deg): <span id="demo_dis"></span></p>
-			<input type="range" min="0" max="90" value="50" class="slider" id="displacement">
-		  </div>
-		<div class="slidecontainer">
-			<p>LENGTH(m): <span id="demo_len"></span></p>
-			<input type="range" min="3" max="30" value="15" class="slider" id="height">
-		  </div>
-		  <div class="slidecontainer">
-			<p>MASS(g): <span id="demo_mass"></span></p>
-			<input type="range" min="1" max="1000" value="1" class="slider" id="mass">
-		  </div>
-		<button id = "form" type = "submit" class ="submit" onClick="updatePara()">Submit</button><br>
-		<button class="play">Play</button>
-		<button class="pause">Pause</button>
-		<button class="restart">Restart</button>
-	</fieldset>
+	
 	<div class="section">
 		<div class="columns is-mobile is-centered">
 			<div class="column has-text-centered">
-				<div class="hero is-large is-info">
+				<div class="hero is-small is-danger">
 					<div class="hero-body has-text-centered">
-						<div id="plot"></div>
-						<div id = "plot2"></div>
 						<div class="container">
 							<div id="rod" className="rod">
 								<div id="pivot"></div>
 								<div id="ball"></div>
 							</div>
-							
-						</div>
-						
+							<br>
+							<fieldset>
+								<div class="slidecontainer">
+									<p>INITIAL ANGLE(deg): <span id="demo_dis"></span></p>
+									<input type="range" min="0" max="90" value="50" class="slider" id="displacement">
+								  </div>
+								  <br>
+								<div class="slidecontainer">
+									<p>LENGTH(m): <span id="demo_len"></span></p>
+									<input type="range" min="5" max="30" value="15" class="slider" id="height">
+								  </div>
+								  <br>
+								  <div class="slidecontainer">
+									<p>MASS(g): <span id="demo_mass"></span></p>
+									<input type="range" min="400" max="1000" value="600" class="slider" id="mass">
+								  </div>
+								  <br>
+								<div class ="but">
+								<button id = "form" type = "submit" class ="submit button is-link" onClick="updatePara()">Submit</button>
+								<!-- <div class="field has-addons is-centered"> -->
+								<button class="play button is-link">Play</button>
+								<button class="pause button is-link">Pause</button>
+								<button class="restart button is-link">Restart</button>
+								</div>
+								<!-- </div> -->
+							</fieldset>
+							<br><br>
+							<div id = "graph">
+							<div class ="graphs">
+								<div id="plot" ></div>
+								<br> <br>
+								<div id ="plot2"></div>
+							</div>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
