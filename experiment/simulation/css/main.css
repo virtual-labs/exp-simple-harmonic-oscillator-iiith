@@ -1,5 +1,6 @@
 .page {
-	/*overflow-x: scroll;*/
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 .but {
@@ -10,7 +11,7 @@
 	width: 100%; /* Width of the outside container */
 }
 
-button {
+.button {
 	color: white;
 	text-align: center;
 	background-color: #288EC8;
@@ -19,7 +20,7 @@ button {
 	border: none;
 }
 
-button:hover {
+.button:hover {
 	background-color: #A9A9A9;
 }
 
