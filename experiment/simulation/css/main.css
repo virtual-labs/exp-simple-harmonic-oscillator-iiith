@@ -11,7 +11,7 @@
 	width: 100%; /* Width of the outside container */
 }
 
-button {
+.button {
 	color: white;
 	text-align: center;
 	background-color: #288EC8;
@@ -20,12 +20,12 @@ button {
 	border: none;
 }
 
-button:hover {
+.button:hover {
 	background-color: #A9A9A9;
 }
 
 #main {
-	background-color: green;
+	background-color: #A4C652;
 	width: 85%;
 	height: 85%;
 	margin-left: 7.5%;
