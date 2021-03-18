@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const playButton = document.getElementById('play');
 	const pauseButton = document.getElementById('pause');
 	const restartButton = document.getElementById('restart');
-	const progress = document.getElementById('submit');
 
 	let displacement = 50;
 	let height = 15;
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_dis.oninput = function() {
 		output_dis.innerHTML = this.value;
+		updatePara()
 	};
 
 
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_len.oninput = function() {
 		output_len.innerHTML = this.value;
+		updatePara()
 	};
 
 
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_mass.oninput = function() {
 		output_mass.innerHTML = this.value;
+		updatePara()
 	};
 
 	const myAnimation = anime({
@@ -56,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	playButton.addEventListener('click', function() { myAnimation.play(); });
 	pauseButton.addEventListener('click', function() { myAnimation.pause(); });
 	restartButton.addEventListener('click', function() { myAnimation.restart(); });
-	progress.addEventListener('click', function() { updatePara() });
 
 	function updatePara()
 	{
