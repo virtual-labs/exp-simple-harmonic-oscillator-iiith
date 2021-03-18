@@ -1,5 +1,6 @@
 .page {
-	/*overflow-x: scroll;*/
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 .but {
