@@ -3,11 +3,8 @@
 	overflow-y: scroll;
 }
 
-.but {
-	margin-left: 10px;
-}
 
-.slidecontainer {
+.slidecontainer {	
 	width: 100%; /* Width of the outside container */
 }
 

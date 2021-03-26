@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// slider for initial angle
 	const slider_dis = document.getElementById("displacement");
-	const output_dis = document.getElementById("demo_dis");
+	const output_dis = document.getElementById("id_dis");
 	output_dis.innerHTML = slider_dis.value; // Display the default slider value
 
 	// Update the current slider value (each time you drag the slider handle)
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// slider for length of pendulum
 	const slider_len = document.getElementById("height");
-	const output_len = document.getElementById("demo_len");
+	const output_len = document.getElementById("id_len");
 	output_len.innerHTML = slider_len.value; // Display the default slider value
 
 	// Update the current slider value (each time you drag the slider handle)
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// slider for mass of bob
 	const slider_mass = document.getElementById("mass");
-	const output_mass = document.getElementById("demo_mass");
+	const output_mass = document.getElementById("id_mass");
 	output_mass.innerHTML = slider_mass.value; // Display the default slider value
 
 	// Update the current slider value (each time you drag the slider handle)
@@ -65,13 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
 		height = document.getElementById("height").value;
 		mass = document.getElementById("mass").value;
 
-		const myElement = document.querySelector("#rod");
-		const myElement1 = document.querySelector("#ball");
+		const rod_css = document.querySelector("#rod");
+		const ball_css = document.querySelector("#ball");
 
-		myElement.style.height = height + "em";
-		myElement1.style.height = mass / 300 + "em" ;
-		myElement1.style.width = mass / 300 + "em" ;
-		myElement1.style.left = mass / (-600) + "em" ;
+		rod_css.style.height = height + "em";
+		ball_css.style.height = mass / 300 + "em" ;
+		ball_css.style.width = mass / 300 + "em" ;
+		ball_css.style.left = mass / (-600) + "em" ;
 
 		time = 2 * Math.PI * Math.sqrt((height) / 9.8) * 1000;
 		draw();
@@ -116,15 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			const data = [trace1];
 			const layout = {
-				// title: {
-				//   text:'Plot Title',
-				//   font: {
-				//     family: 'Courier New, monospace',
-				//     size: 24
-				//   },
-				//   xref: 'paper',
-				//   x: 0.05,
-				// },
 
 				width: 500,
 				height: 500,
