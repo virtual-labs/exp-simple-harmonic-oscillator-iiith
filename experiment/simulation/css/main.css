@@ -3,15 +3,11 @@
 	overflow-y: scroll;
 }
 
-.but {
-	margin-left: 10px;
-}
-
 .slidecontainer {
 	width: 100%; /* Width of the outside container */
 }
 
-.button {
+.action-button {
 	color: white;
 	text-align: center;
 	background-color: #288EC8;
@@ -20,7 +16,7 @@
 	border: none;
 }
 
-.button:hover {
+.action-button:hover {
 	background-color: #A9A9A9;
 }
 
