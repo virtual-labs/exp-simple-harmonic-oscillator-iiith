@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_dis.oninput = function() {
 		output_dis.innerHTML = this.value;
-		updatePara()
+		updatePara();
 	};
 
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_len.oninput = function() {
 		output_len.innerHTML = this.value;
-		updatePara()
+		updatePara();
 	};
 
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Update the current slider value (each time you drag the slider handle)
 	slider_mass.oninput = function() {
 		output_mass.innerHTML = this.value;
-		updatePara()
+		updatePara();
 	};
 
 	const myAnimation = anime({
