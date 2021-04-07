@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		updatePara();
 	};
 
-	const myAnimation = anime({
+	let myAnimation = anime({
 		targets: '#rod',
 		rotate: [displacement, -1 * displacement],
 		duration: function(){
@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		ball_css.style.left = mass / (-600) + "em" ;
 
 		time = 2 * Math.PI * Math.sqrt((height) / 9.8) * 1000;
-		draw();
-		draw2();
+		drawDisGraph();
+		drawLenGraph();
 
 		anime.remove(myAnimation);
-		const myAnimation2 = anime({
+		myAnimation = anime({
 			targets: '#rod',
 			rotate: [displacement, -1 * displacement],
 			duration: function(){
@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			loop: true,
 		});
 
-		playButton.addEventListener('click', function() { myAnimation2.play(); });
-		pauseButton.addEventListener('click', function() { myAnimation2.pause(); });
-		restartButton.addEventListener('click', function() { myAnimation2.restart(); });
+		playButton.addEventListener('click', function() { myAnimation.play(); });
+		pauseButton.addEventListener('click', function() { myAnimation.pause(); });
+		restartButton.addEventListener('click', function() { myAnimation.restart(); });
 	}
 
-	function draw() {
+	function drawDisGraph() {
 		try {
 			// compile the expression once
 			const omega = Math.sqrt(9.8 / height);
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			};
 
 			const config = {responsive: true};
-			Plotly.newPlot('plot', data, layout, config);
+			Plotly.newPlot('disPlot', data, layout, config);
 		}
 
 		catch (err) {
@@ -152,9 +152,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 
-	draw();
+	drawDisGraph();
 
-	function draw2() {
+	function drawLenGraph() {
 		try {
 			// compile the expression once
 			const coef = 2 * Math.PI / (math.sqrt(9.8));
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 			const config = {responsive: true};
 			const data = [trace1];
-			Plotly.newPlot('plot2', data,layout,config);
+			Plotly.newPlot('lenPlot', data,layout,config);
 		}
 
 		catch (err) {
@@ -210,5 +210,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 
-	draw2();
+	drawLenGraph();
 })

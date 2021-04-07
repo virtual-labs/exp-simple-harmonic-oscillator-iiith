@@ -20,7 +20,7 @@
 	background-color: #A9A9A9;
 }
 
-#main {
+.main {
 	background-color: #A4C652;
 	width: 85%;
 	height: 85%;
@@ -28,7 +28,7 @@
 	border: solid;
 }
 
-#rod {
+.rod {
 	position: relative;
 	margin-top: 1%;
 	margin-left: 50%;
@@ -41,7 +41,7 @@
 	font-size: 1.4vw;
 }
 
-#pivot {
+.pivot {
 	position: absolute;
 	left: -0.225em;
 	width: 0.5em;
@@ -50,7 +50,7 @@
 	background-color: black;
 }
 
-#ball {
+.ball {
 	position: absolute;
 	bottom: 0%;
 	left: -1em;
@@ -60,7 +60,7 @@
 	background-color: orange;
 }
 
-#graph {
+.graph {
 	height : 50%;
 	width : 100%;
 	margin-left: 7.5%;
