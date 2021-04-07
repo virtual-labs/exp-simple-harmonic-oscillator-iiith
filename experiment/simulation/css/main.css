@@ -1,1 +1,68 @@
-/* You CSS goes in here */
+.page {
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
+
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+}
+
+.action-button {
+	color: white;
+	text-align: center;
+	background-color: #288EC8;
+	border-radius: 16px;
+	padding: 10px 20px;
+	border: none;
+}
+
+.action-button:hover {
+	background-color: #A9A9A9;
+}
+
+.main {
+	background-color: #A4C652;
+	width: 85%;
+	height: 85%;
+	margin-left: 7.5%;
+	border: solid;
+}
+
+.rod {
+	position: relative;
+	margin-top: 1%;
+	margin-left: 50%;
+	width: 0.1%;
+	height: 15.375em;
+	border-radius: 5px;
+	transform-origin: 50% 0%;
+	transform: rotate(60deg);
+	background-color: black;
+	font-size: 1.4vw;
+}
+
+.pivot {
+	position: absolute;
+	left: -0.225em;
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	background-color: black;
+}
+
+.ball {
+	position: absolute;
+	bottom: 0%;
+	left: -1em;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background-color: orange;
+}
+
+.graph {
+	height : 50%;
+	width : 100%;
+	margin-left: 7.5%;
+	overflow-x: scroll;
+}
