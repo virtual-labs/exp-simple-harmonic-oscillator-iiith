@@ -90,7 +90,7 @@
 
     const myQuestions = [
 	    {
-		    question: "1. Value of Time period depends on initial conditions.",  ///// Write the question inside double quotes
+		    question: "1. Value of Time Period depends on initial conditions.",  ///// Write the question inside double quotes
 		    answers: {
 			    a: "True",                  ///// Write the option 1 inside double quotes
 			    b: "False",                  ///// Write the option 2 inside double quotes
@@ -99,7 +99,7 @@
 	    },			 
 
 	    {
-		    question: "2. Value of time period depends on mass.",  ///// Write the question inside double quotes
+		    question: "2. Value of Time Period depends on mass.",  ///// Write the question inside double quotes
 		    answers: {
 			    a: "True",                  ///// Write the option 1 inside double quotes
 			    b: "False",                  ///// Write the option 2 inside double quotes
@@ -108,7 +108,7 @@
 	    },
  
 	    {
-		    question: "3. Value of time period depends on length of the oscillator.",  ///// Write the question inside double quotes
+		    question: "3. Value of Time Period depends on length of the oscillator.",  ///// Write the question inside double quotes
 		    answers: {
 			    a: "True",                  ///// Write the option 1 inside double quotes
 			    b: "False",                  ///// Write the option 2 inside double quotes
