@@ -1,3 +1,5 @@
+'use strict';
+
 document.addEventListener('DOMContentLoaded', function() {
 
 	const playButton = document.getElementById('play');
@@ -14,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const output_dis = document.getElementById("id_dis");
 	output_dis.innerHTML = slider_dis.value; // Display the default slider value
 
-	// Update the current slider value (each time you drag the slider handle)
 	slider_dis.oninput = function() {
 		output_dis.innerHTML = this.value;
 		updatePara();
@@ -26,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const output_len = document.getElementById("id_len");
 	output_len.innerHTML = slider_len.value; // Display the default slider value
 
-	// Update the current slider value (each time you drag the slider handle)
 	slider_len.oninput = function() {
 		output_len.innerHTML = this.value;
 		updatePara();
@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const output_mass = document.getElementById("id_mass");
 	output_mass.innerHTML = slider_mass.value; // Display the default slider value
 
-	// Update the current slider value (each time you drag the slider handle)
 	slider_mass.oninput = function() {
 		output_mass.innerHTML = this.value;
 		updatePara();
