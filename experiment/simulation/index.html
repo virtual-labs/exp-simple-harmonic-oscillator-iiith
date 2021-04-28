@@ -5,17 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 		<link rel="stylesheet" href="./css/main.css">
-		<script src="https://unpkg.com/mathjs@9.2.0/lib/browser/math.js"></script>
-		<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
 	</head>
 
 	<body class="page">
-		<div class="columns is-mobile is-centered">
-			<div class="column has-text-centered">
-				<h1 class="title">Simple Harmonic Oscillator</h1>
-			</div>
-		</div>
-
 		<div class="columns is-mobile is-centered">
 			<div class="column has-text-centered">
 				<div class="slidecontainer">
@@ -53,21 +45,20 @@
 		</div>
 
 		<div class="graph">
-			<div class="graphs">
-				<div class="columns is-centered">
-					<div class="column has-text-centered">
-						<div id="disPlot" ></div>
-					</div>
+			<div class="columns is-centered">
+				<div class="column has-text-centered">
+					<div id="disPlot" ></div>
+				</div>
 
-					<div class="column has-text-centered">
-						<div id ="lenPlot"></div>
-					</div>
+				<div class="column has-text-centered">
+					<div id ="lenPlot"></div>
 				</div>
 			</div>
 		</div>
 
+		<script src="https://unpkg.com/mathjs@9.2.0/lib/browser/math.js"></script>
+		<script src='https://cdn.plot.ly/plotly-1.47.4.min.js'></script>
 		<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-
 		<script src="./js/main.js"></script>
 	</body>
 </html>
