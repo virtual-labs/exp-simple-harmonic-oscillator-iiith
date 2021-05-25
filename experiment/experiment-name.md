@@ -1,1 +1,1 @@
-### Simple Harmonic Oscillator
+## Simple Harmonic Oscillator
