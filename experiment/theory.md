@@ -7,10 +7,12 @@ Where, τ = Torque ; I = Moment of Inertia; α = Angular Velocity. m is mass of 
  
 
 If the amplitude of angular displacement is small then we can use the approximation (sinθ ≈ θ). By considering the above approximation, the equation of motion reduces to :
+
 <img src="images/eq3.JPG">
  
 
 The solution for equation of simple harmonic oscillator is
+
 <img src="images/eq4.JPG">
  
 
