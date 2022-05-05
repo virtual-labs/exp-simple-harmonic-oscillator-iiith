@@ -3,30 +3,8 @@
 	overflow-y: scroll;
 }
 
-.slidecontainer {
-	width: 100%; /* Width of the outside container */
-}
-
-.action-button {
-	color: white;
-	text-align: center;
-	font-size: 120%;
-	background-color: #288EC8;
-	border-radius: 16px;
-	padding: 10px 20px;
-	border: none;
-}
-
-.action-button:hover {
-	background-color: #A9A9A9;
-}
-
-.main {
+.v-canvas-container {
 	background-color: #A4C652;
-	width: 85%;
-	height: 85%;
-	margin-left: 7.5%;
-	border: solid;
 }
 
 .rod {
