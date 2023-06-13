@@ -1,0 +1,16 @@
+
+/home/runner/work/exp-simple-harmonic-oscillator-iiith/exp-simple-harmonic-oscillator-iiith/experiment/simulation/js/main.js
+   46:20  warning  'anime' is not defined                 no-undef
+   79:3   warning  'anime' is not defined                 no-undef
+   80:17  warning  'anime' is not defined                 no-undef
+  101:17  warning  'math' is not defined                  no-undef
+  104:20  warning  'math' is not defined                  no-undef
+  145:4   warning  'Plotly' is not defined                no-undef
+  159:32  warning  'math' is not defined                  no-undef
+  161:17  warning  'math' is not defined                  no-undef
+  164:20  warning  'math' is not defined                  no-undef
+  203:4   warning  'Plotly' is not defined                no-undef
+  215:10  warning  'openGraph' is defined but never used  no-unused-vars
+
+✖ 11 problems (0 errors, 11 warnings)
+
